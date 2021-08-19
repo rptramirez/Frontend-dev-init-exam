@@ -115,11 +115,11 @@ class UI {
                 </div>
                 <!-- item functionality -->
                 <div>
-                    <i class="fas fa-chevron-up" data-id=${item.id}></i>
+                    <img class="fa-chevron-up" src="./images/chevron-up.svg" data-id=${item.id}>
                   <p class="item-amount">
                     ${item.amount}
                   </p>
-                    <i class="fas fa-chevron-down" data-id=${item.id}></i>
+                    <img class="fa-chevron-down" src="./images/chevron-down.svg" data-id=${item.id}>
                 </div>
               <!-- cart item -->
         `;

@@ -10,7 +10,8 @@
     <!-- Custom StyleSheet -->
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"
+        data-auto-add-css="false" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="main.css" />
     <script src="//cdn.jsdelivr.net/npm/less@4.1.1"></script>
@@ -23,7 +24,7 @@
     <nav class="navbar">
         <div class="navbar-center">
             <span class="nav-icon">
-                <i class="fas fa-bars"></i>
+                <img class="fa-bars" src="./images/menu.svg">
             </span>
             <ul class="nav__list">
                 <li class="nav__item">
@@ -42,7 +43,7 @@
             <img src="./images/logo.svg" alt="store logo" />
             <div class="cart-btn">
                 <span class="nav-icon">
-                    <i class="fas fa-cart-plus"></i>
+                    <img src="./images/cart.svg" alt="store logo" />
                 </span>
                 <div class="cart-items">0</div>
             </div>
@@ -71,7 +72,7 @@
                 <div class="img-container">
                     <img src="./images/product-1.jpeg" alt="product" class="product-img" />
                     <button class="bag-btn" data-id="1">
-                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fa-shopping-cart"></i>
                         add to cart
                     </button>
                 </div>
@@ -86,7 +87,7 @@
     <!-- cart -->
     <div class="cart-overlay">
         <div class="cart">
-            <span class="close-cart"><i class="far fa-window-close"></i></span>
+            <span class="close-cart"><img src="/images/close.svg" alt=""></span>
             <h2>your cart</h2>
             <div class="cart-content">
                 <!-- Products listen in products.json and added through javascript -->
@@ -99,10 +100,10 @@
     </div>
 
     <div class="cart-btn">
-        <div class="progress-wrap"> 
+        <div class="progress-wrap">
             <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-				<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-			</svg>
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
         </div>
     </div>
 
