@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ecommerce Website</title>
+
+    <!-- Custom StyleSheet -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="//cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#header" class="nav__link scroll-link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#category" class="nav__link scroll-link">Category</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#news" class="nav__link scroll-link">Blog</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link scroll-link">Contact</a>
+                </li>
+            </ul>
+            <img src="./images/logo.svg" alt="store logo" />
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- hero -->
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">gadgets and furniture collection</h1>
+            <button class="banner-btn">shop now</button>
+        </div>
+
+    </header>
+
+    <!-- end of hero -->
+
+    <!-- products -->
+    <section class="products">
+        <div class="section-title">
+            <h2>our products</h2>
+        </div>
+        <div class="products-center">
+            <!-- single product -->
+            <article class="product">
+                <div class="img-container">
+                    <img src="./images/product-1.jpeg" alt="product" class="product-img" />
+                    <button class="bag-btn" data-id="1">
+                        <i class="fas fa-shopping-cart"></i>
+                        add to cart
+                    </button>
+                </div>
+
+                <h3>queen bed</h3>
+                <h4>$16</h4>
+            </article>
+            <!-- end of single product -->
+        </div>
+    </section>
+    <!-- end of products -->
+    <!-- cart -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart"><i class="far fa-window-close"></i></span>
+            <h2>your cart</h2>
+            <div class="cart-content">
+                <!-- Products listen in products.json and added through javascript -->
+            </div>
+            <div class="cart-footer">
+                <h3>your total : $<span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">clear cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-btn">
+        <div class="progress-wrap"> 
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+				<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+			</svg>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer-top__box">
+                    <h3>EXTRAS</h3>
+                    <a href="#">Brands</a>
+                    <a href="#">Gift Certificates</a>
+                    <a href="#">Affiliate</a>
+                    <a href="#">Specials</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div class="footer-top__box">
+                    <h3>INFORMATION</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div class="footer-top__box">
+                    <h3>MY ACCOUNT</h3>
+                    <a href="#">My Account</a>
+                    <a href="#">Order History</a>
+                    <a href="#">Wish List</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div class="footer-top__box">
+                    <h3>CONTACT US</h3>
+                    <div>
+                        <span>
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-location"></use>
+                            </svg>
+                        </span>
+                        42 Dream House, Dreammy street, 7131 Dreamville, USA
+                    </div>
+                    <div>
+                        <span>
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-envelop"></use>
+                            </svg>
+                        </span>
+                        company@gmail.com
+                    </div>
+                    <div>
+                        <span>
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                            </svg>
+                        </span>
+                        456-456-4512
+                    </div>
+                    <div>
+                        <span>
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
+                            </svg>
+                        </span>
+                        Dream City, USA
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer-bottom__box">
+
+            </div>
+            <div class="footer-bottom__box">
+
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- end of cart -->
+    <!-- Glide Carousel Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- contentful -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="./js/app.js"></script>
+    <script src="./js/backToTop.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>
